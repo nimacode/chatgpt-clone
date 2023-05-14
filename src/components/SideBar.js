@@ -47,7 +47,7 @@ const SideBar = () => {
           </span>
         </div>
         <h1 className={`sidebar__app-title ${!open && 'scale-0 hidden'}`}>
-          ChatGPT
+          Rasad CahtBot
         </h1>
         <div className={`sidebar__btn-close`} onClick={() => setOpen(!open)}>
           {open ? (
@@ -70,30 +70,6 @@ const SideBar = () => {
 
       <div className='nav__bottom'>
         <DarkMode open={open} />
-        <div className='nav'>
-          <a
-            href='https://www.buymeacoffee.com/eyuel'
-            rel='noreferrer'
-            target='_blank'
-            className='nav__item'>
-            <div className='nav__icons'>
-              <MdOutlineCoffee />
-            </div>
-            <h1 className={`${!open && 'hidden'}`}>Support this project</h1>
-          </a>
-        </div>
-        <div className='nav'>
-          <a
-            rel='noreferrer'
-            target='_blank'
-            href='https://github.com/EyuCoder/chatgpt-clone'
-            className='nav__item'>
-            <div className='nav__icons'>
-              <AiOutlineGithub />
-            </div>
-            <h1 className={`${!open && 'hidden'}`}>Clone on Github</h1>
-          </a>
-        </div>
         <div onClick={() => setModalOpen(true)} className='nav'>
           <span htmlFor='setting-modal' className='nav__item'>
             <div className='nav__icons'>
